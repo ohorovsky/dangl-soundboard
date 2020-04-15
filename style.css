@@ -1,0 +1,69 @@
+html {
+    font-size: 10px;
+    background: url(https://images.unsplash.com/photo-1571512599285-9ac4fdf3dba9?ixlib=rb-1.2.1&auto=format&fit=crop&w=334&q=80%20334w,%20https://images.unsplash.com/photo-1571512599285-9ac4fdf3dba9?ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80%20634w,%20https://images.unsplash.com/photo-1571512599285-9ac4fdf3dba9?ixlib=rb-1.2.1&auto=format&fit=crop&w=668&q=80%20668w,%20https://images.unsplash.com/photo-1571512599285-9ac4fdf3dba9?ixlib=rb-1.2.1&auto=format&fit=crop&w=934&q=80%20934w,%20https://images.unsplash.com/photo-1571512599285-9ac4fdf3dba9?ixlib=rb-1.2.1&auto=format&fit=crop&w=1234&q=80%201234w,%20https://images.unsplash.com/photo-1571512599285-9ac4fdf3dba9?ixlib=rb-1.2.1&auto=format&fit=crop&w=1268&q=80%201268w,%20https://images.unsplash.com/photo-1571512599285-9ac4fdf3dba9?ixlib=rb-1.2.1&auto=format&fit=crop&w=1534&q=80%201534w,%20https://images.unsplash.com/photo-1571512599285-9ac4fdf3dba9?ixlib=rb-1.2.1&auto=format&fit=crop&w=1834&q=80%201834w,%20https://images.unsplash.com/photo-1571512599285-9ac4fdf3dba9?ixlib=rb-1.2.1&auto=format&fit=crop&w=1868&q=80%201868w,%20https://images.unsplash.com/photo-1571512599285-9ac4fdf3dba9?ixlib=rb-1.2.1&auto=format&fit=crop&w=2134&q=80%202134w,%20https://images.unsplash.com/photo-1571512599285-9ac4fdf3dba9?ixlib=rb-1.2.1&auto=format&fit=crop&w=2434&q=80%202434w,%20https://images.unsplash.com/photo-1571512599285-9ac4fdf3dba9?ixlib=rb-1.2.1&auto=format&fit=crop&w=2468&q=80%202468w,%20https://images.unsplash.com/photo-1571512599285-9ac4fdf3dba9?ixlib=rb-1.2.1&auto=format&fit=crop&w=2734&q=80%202734w,%20https://images.unsplash.com/photo-1571512599285-9ac4fdf3dba9?ixlib=rb-1.2.1&auto=format&fit=crop&w=3034&q=80%203034w,%20https://images.unsplash.com/photo-1571512599285-9ac4fdf3dba9?ixlib=rb-1.2.1&auto=format&fit=crop&w=3068&q=80%203068w,%20https://images.unsplash.com/photo-1571512599285-9ac4fdf3dba9?ixlib=rb-1.2.1&auto=format&fit=crop&w=3334&q=80%203334w,%20https://images.unsplash.com/photo-1571512599285-9ac4fdf3dba9?ixlib=rb-1.2.1&auto=format&fit=crop&w=3634&q=80%203634w,%20https://images.unsplash.com/photo-1571512599285-9ac4fdf3dba9?ixlib=rb-1.2.1&auto=format&fit=crop&w=3668&q=80%203668w,%20https://images.unsplash.com/photo-1571512599285-9ac4fdf3dba9?ixlib=rb-1.2.1&auto=format&fit=crop&w=3934&q=80%203934w,%20https://images.unsplash.com/photo-1571512599285-9ac4fdf3dba9?ixlib=rb-1.2.1&auto=format&fit=crop&w=4000&q=80%204000w,%20https://images.unsplash.com/photo-1571512599285-9ac4fdf3dba9?ixlib=rb-1.2.1&auto=format&fit=crop&w=4000&q=80%204000w,%20https://images.unsplash.com/photo-1571512599285-9ac4fdf3dba9?ixlib=rb-1.2.1&auto=format&fit=crop&w=4000&q=80%204000w,%20https://images.unsplash.com/photo-1571512599285-9ac4fdf3dba9?ixlib=rb-1.2.1&auto=format&fit=crop&w=4000&q=80%204000w,%20https://images.unsplash.com/photo-1571512599285-9ac4fdf3dba9?ixlib=rb-1.2.1&auto=format&fit=crop&w=4000&q=80%204000w,%20https://images.unsplash.com/photo-1571512599285-9ac4fdf3dba9?ixlib=rb-1.2.1&auto=format&fit=crop&w=4000&q=80%204000w,%20https://images.unsplash.com/photo-1571512599285-9ac4fdf3dba9?ixlib=rb-1.2.1&auto=format&fit=crop&w=4000&q=80%204000w,%20https://images.unsplash.com/photo-1571512599285-9ac4fdf3dba9?ixlib=rb-1.2.1&auto=format&fit=crop&w=4000&q=80%204000w,%20https://images.unsplash.com/photo-1571512599285-9ac4fdf3dba9?ixlib=rb-1.2.1&auto=format&fit=crop&w=4000&q=80%204000w);
+    background-position: center;
+    background-size: cover;
+  }
+
+  body,html {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+  }
+  h1 {
+      color: #ffc600;;
+      text-align: center;
+      font-size: 30px;
+      padding: 2rem;
+      text-shadow: black;
+  }
+  .keys {
+    display: grid;
+    grid-column-gap: 2rem;
+    grid-row-gap: 2rem;
+    grid-auto-rows: 1fr;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  }
+
+  .key {
+    border: .4rem solid black;
+    border-radius: .5rem;
+    margin: 1rem;
+    font-size: 1.5rem;
+    padding: 1rem .5rem;
+    transition: all .07s ease;
+    /* width: 10rem; */
+    text-align: center;
+    color: white;
+    background: rgba(0,0,0,0.4);
+    text-shadow: 0 0 .5rem black;
+    font-weight: bold;
+  }
+
+  .playing {
+    transform: scale(1.1);
+    border-color: #ffc600;
+    box-shadow: 0 0 1rem #ffc600;
+  }
+
+  kbd {
+    display: block;
+    font-size: 4rem;
+  }
+
+  .sound {
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    letter-spacing: .1rem;
+    color: #ffc600;
+  }
+  .wrapper {
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+  }
+  .keys__wrapper{
+      width: 100%;
+  }

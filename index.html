@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Dangl - soundboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="wrapper">
+       <div class="keys__wrapper">
+        <div class="keys">
+            <div data-key="1" class="key">
+              <kbd>🤣</kbd>
+              <span class="sound">Dve slovicka</span>
+            </div>
+            <div data-key="2" class="key">
+              <kbd>🤭</kbd>
+              <span class="sound">HEHEHEHE</span>
+            </div>
+            <div data-key="3" class="key">
+              <kbd>☺️</kbd>
+              <span class="sound">Sex, hehehe</span>
+            </div>
+            <div data-key="4" class="key">
+              <kbd>🍆</kbd>
+              <span class="sound">Seeeeex</span>
+            </div>
+            <div data-key="5" class="key">
+              <kbd>🛑</kbd>
+              <span class="sound">Stopla!</span>
+            </div>
+            <div data-key="6" class="key">
+              <kbd>💁</kbd>
+              <span class="sound">ta-ta-ta-ta-ta</span>
+            </div>
+            <div data-key="7" class="key">
+              <kbd>😱</kbd>
+              <span class="sound">Uaaaaaaa</span>
+            </div>
+            <div data-key="8" class="key">
+              <kbd>😥</kbd>
+              <span class="sound">Som sa aj unavil!</span>
+            </div>
+          </div>
+       </div>
+    </div>
+  <audio data-key="1" src="sounds/dve_slovicka.mp3"></audio>
+  <audio data-key="2" src="sounds/hehehe.mp3"></audio>
+  <audio data-key="3" src="sounds/sex_hehe.mp3"></audio>
+  <audio data-key="4" src="sounds/sex.mp3"></audio>
+  <audio data-key="5" src="sounds/stopla.mp3"></audio>
+  <audio data-key="6" src="sounds/tatata.mp3"></audio>
+  <audio data-key="7" src="sounds/ua.mp3"></audio>
+  <audio data-key="8" src="sounds/unavil.mp3"></audio>
+
+<script>
+  function removeTransition(e) {
+    if (e.propertyName !== 'transform') return;
+    e.target.classList.remove('playing');
+  }
+
+  function playSound(el) {
+    const audio = document.querySelector(`audio[data-key="${el.dataset.key}"]`);
+    const key = document.querySelector(`div[data-key="${el.dataset.key}"]`);
+    if (!audio) return;
+
+    key.classList.add('playing');
+    audio.currentTime = 0;
+    audio.play();
+  }
+
+  const keys = Array.from(document.querySelectorAll('.key'));
+  keys.forEach(key => {
+    key.addEventListener('transitionend', removeTransition)
+    key.addEventListener('click', () => playSound(key))
+  });
+</script>
+
+
+</body>
+</html>
